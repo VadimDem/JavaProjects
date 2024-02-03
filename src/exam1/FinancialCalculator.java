@@ -148,13 +148,5 @@ public class FinancialCalculator {
         double USD = (sum / 90.66);
         double CNY = (sum / 12.6);
         System.out.println("Сумма всех затрат: " + total + " В евро = " + Euro + " В долларах = " + USD + " В Юанях = " + CNY);
-//        int sum = 0;
-//        for (int i = 1; i < 31; i++){
-//            sum += Expenses[i];
-//        }
-//        double total = sum;
-//        System.out.println("Сумма всех чисел: " + total);
-
-
     }
 }
