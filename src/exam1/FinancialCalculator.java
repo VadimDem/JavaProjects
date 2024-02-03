@@ -62,11 +62,9 @@ public class FinancialCalculator {
                 case 2:
                     Function1();
             }
-
         } else {
             setExpenses();
         }
-
     }
 
     public static void setExpenses(){
