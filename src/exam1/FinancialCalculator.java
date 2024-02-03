@@ -96,7 +96,6 @@ public class FinancialCalculator {
 //        for (int i = 0; i < 30; i++){
 //
 //        }
-
         int maxIndex = 0;
         int maxExpense = Expenses[0]; // Предполагаем, что максимальное значение находится в первом элементе массива
 
