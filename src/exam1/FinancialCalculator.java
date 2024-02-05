@@ -3,9 +3,9 @@ package exam1;
 import java.util.Scanner;
 
 public class FinancialCalculator {
-    static int[] Expenses = new int[30];
-    static int ExpensesDay;
+    static double[] Expenses = new double[30];
     static int Day;
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -122,7 +122,7 @@ public class FinancialCalculator {
 
     public static void Function3(){
         int maxIndex = 0;
-        int maxExpense = Expenses[0];
+        double maxExpense = Expenses[0];
 
         for (int i = 1; i < Expenses.length; i++) {
             if (Expenses[i] > maxExpense) {
@@ -146,5 +146,19 @@ public class FinancialCalculator {
         double USD = (sum / 90.66);
         double CNY = (sum / 12.6);
         System.out.println("Сумма всех затрат: " + total + " В евро = " + Euro + " В долларах = " + USD + " В Юанях = " + CNY);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1. Конвертер валют");
+        System.out.println("2. Вернуться в меню");
+        System.out.print("Введите номер пункта:");
+        int Choice = scanner.nextInt();
+
+        switch (Choice){
+            case 1:
+                Converter();
+                break;
+            case 2:
+                main(new String[]{});
+                break;
+        }
     }
 }
