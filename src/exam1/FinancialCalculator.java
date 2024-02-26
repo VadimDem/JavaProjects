@@ -142,6 +142,7 @@ public class FinancialCalculator {
             sum += num;
         }
         double total = sum;
+
         double Euro = (sum / 98.64);
         double USD = (sum / 90.66);
         double CNY = (sum / 12.6);
